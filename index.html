@@ -1,0 +1,4029 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para mi niña, felices 22 Meses ❤️</title>
+
+<style>
+
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   PORTADA
+===================================================== */
+
+#portada {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    background: #d8899b;
+}
+
+#portada::before {
+    content: "";
+
+    position: absolute;
+    inset: -25px;
+
+    background-image: url(
+        "https://img.magnific.com/fotos-premium/huron-gris-negro-corazon-concepto-huron-domestico-concepto-cuidado-mascotas-exoticas-aislado-fondo_369656-2695.jpg?semt=ais_hybrid&w=740&q=80"
+    );
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(9px);
+    transform: scale(1.08);
+
+    opacity: 0.55;
+}
+
+#portada::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(190,76,105,0.50),
+            rgba(120,35,70,0.40)
+        );
+}
+
+.mensaje-portada {
+    position: relative;
+    z-index: 2;
+
+    width: min(700px, 85%);
+
+    padding: 55px 40px;
+
+    text-align: center;
+    color: white;
+
+    background: rgba(90,30,50,0.38);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.25);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.25),
+        inset 0 0 30px rgba(255,255,255,0.05);
+}
+
+.mensaje-portada h1 {
+    font-size:
+        clamp(40px, 7vw, 75px);
+
+    margin-bottom: 35px;
+
+    font-weight: normal;
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 4px 15px rgba(0,0,0,0.35);
+}
+
+.mensaje-portada p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+   BOTÓN ENTRAR
+===================================================== */
+
+#entrar {
+    position: relative;
+    overflow: hidden;
+
+    border: none;
+
+    padding:
+        16px 38px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff7fa,
+            #ffe4ec
+        );
+
+    color: #8e4057;
+
+    font-family: Georgia, serif;
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s,
+        background 0.3s;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.18),
+        inset 0 1px 0 white;
+}
+
+#entrar::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            100deg,
+            transparent,
+            rgba(255,255,255,0.8),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+#entrar:hover::before {
+    left: 150%;
+}
+
+#entrar:hover {
+    transform:
+        scale(1.08)
+        translateY(-3px);
+
+    background: white;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.25),
+        0 0 25px rgba(255,210,225,0.35);
+}
+
+
+/* =====================================================
+   PAGINA PRINCIPAL
+===================================================== */
+
+#inicio {
+    display: none;
+
+    min-height: 100vh;
+
+    padding:
+        70px 30px;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 5%,
+            rgba(255,255,255,0.40),
+            transparent 23%
+        ),
+
+        radial-gradient(
+            circle at 90% 15%,
+            rgba(255,205,225,0.30),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 50% 110%,
+            rgba(100,25,55,0.28),
+            transparent 45%
+        ),
+
+        linear-gradient(
+            135deg,
+            #f3b8c6 0%,
+            #e797ac 32%,
+            #d97896 67%,
+            #bd5d7c 100%
+        );
+
+    color: white;
+}
+
+
+/* Corazones decorativos */
+
+#inicio::before {
+    content: "♥";
+
+    position: absolute;
+
+    top: 4%;
+    left: -45px;
+
+    font-size: 190px;
+
+    color:
+        rgba(255,255,255,0.10);
+
+    transform:
+        rotate(-18deg);
+
+    pointer-events: none;
+}
+
+#inicio::after {
+    content: "♥";
+
+    position: absolute;
+
+    right: -50px;
+    bottom: 2%;
+
+    font-size: 230px;
+
+    color:
+        rgba(255,255,255,0.09);
+
+    transform:
+        rotate(18deg);
+
+    pointer-events: none;
+}
+
+
+.titulo-inicio {
+    text-align: center;
+
+    margin-bottom: 60px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.titulo-inicio h2 {
+    font-size:
+        clamp(35px,5vw,55px);
+
+    font-weight: normal;
+
+    text-shadow:
+        0 4px 15px rgba(80,20,40,0.30),
+        0 0 25px rgba(255,255,255,0.10);
+}
+
+.titulo-inicio p {
+    margin-top: 10px;
+
+    font-size: 18px;
+
+    opacity: 0.90;
+
+    text-shadow:
+        0 2px 8px rgba(70,20,40,0.18);
+}
+
+
+/* =====================================================
+   MENÚ PRINCIPAL
+===================================================== */
+
+.menu {
+    width:
+        min(1000px,95%);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 30px;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   TARJETAS
+===================================================== */
+
+.opcion {
+    position: relative;
+
+    min-height: 230px;
+
+    border-radius: 25px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.38);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.18),
+            rgba(100,30,55,0.30)
+        );
+
+    backdrop-filter: blur(12px);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 35px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+    isolation: isolate;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease,
+        border 0.35s ease;
+
+    box-shadow:
+        0 18px 45px
+        rgba(70,20,40,0.18),
+
+        inset 0 1px 0
+        rgba(255,255,255,0.22);
+}
+
+
+/* Brillo interno */
+
+.opcion::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -95px;
+    right: -70px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.14);
+
+    filter: blur(5px);
+
+    z-index: -1;
+
+    transition:
+        transform 0.45s ease;
+}
+
+
+/* Corazón pequeño */
+
+.opcion::after {
+    content: "♥";
+
+    position: absolute;
+
+    right: 20px;
+    bottom: 12px;
+
+    font-size: 22px;
+
+    color:
+        rgba(255,255,255,0.28);
+
+    transition:
+        0.35s ease;
+}
+
+
+.opcion span {
+    position: relative;
+    z-index: 2;
+
+    font-size:
+        clamp(23px,3vw,34px);
+
+    line-height: 1.3;
+
+    text-shadow:
+        0 3px 12px
+        rgba(60,15,35,0.25);
+}
+
+
+.opcion:hover {
+    transform:
+        translateY(-10px)
+        scale(1.025);
+
+    border-color:
+        rgba(255,255,255,0.60);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.25),
+            rgba(100,30,55,0.40)
+        );
+
+    box-shadow:
+        0 28px 60px
+        rgba(65,15,38,0.28),
+
+        inset 0 1px 0
+        rgba(255,255,255,0.30);
+}
+
+
+.opcion:hover::before {
+    transform: scale(1.5);
+}
+
+.opcion:hover::after {
+    transform:
+        scale(1.25)
+        rotate(8deg);
+
+    color:
+        rgba(255,255,255,0.55);
+}
+
+
+/* =====================================================
+   OPCIÓN 4 - YOUTUBE
+===================================================== */
+
+.opcion-youtube {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.22),
+            rgba(120,35,70,0.36)
+        );
+}
+
+.youtube-hint {
+    position: absolute;
+
+    bottom: 25px;
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    font-size: 13px;
+
+    opacity: 0.70;
+
+    white-space: nowrap;
+
+    letter-spacing: 0.5px;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+.opcion-youtube:hover .youtube-hint {
+    opacity: 1;
+}
+
+
+/* =====================================================
+   CARTA OPCIÓN 1
+===================================================== */
+
+#carta {
+    display: none;
+
+    min-height: 100vh;
+
+    padding:
+        70px 20px;
+
+    background:
+
+        linear-gradient(
+            rgba(105,55,40,0.20),
+            rgba(105,55,40,0.20)
+        ),
+
+        url(
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFVE-24RGTWLeOiE_rDxFnOpz87quOLgBQws4zoOr-vQ&s=10"
+        );
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.papel {
+    position: relative;
+
+    width:
+        min(850px,94%);
+
+    margin: auto;
+
+    padding:
+        75px
+        clamp(30px,8vw,90px);
+
+    color: #493022;
+
+    background:
+        linear-gradient(
+            rgba(255,248,220,0.96),
+            rgba(235,216,173,0.96)
+        );
+
+    box-shadow:
+        0 20px 50px
+        rgba(40,20,10,0.35);
+
+    border-radius: 3px;
+
+    transform:
+        rotate(-0.3deg);
+}
+
+
+.papel::before {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    top: 30px;
+    right: 30px;
+
+    background:
+        rgba(90,50,25,0.08);
+
+    border-radius: 50%;
+
+    filter: blur(18px);
+}
+
+
+.papel::after {
+    content: "";
+
+    position: absolute;
+
+    width: 100px;
+    height: 160px;
+
+    bottom: 50px;
+    left: 25px;
+
+    background:
+        rgba(70,40,20,0.07);
+
+    border-radius: 50%;
+
+    filter: blur(20px);
+}
+
+
+.titulo-carta {
+    text-align: center;
+
+    font-size:
+        clamp(32px,5vw,48px);
+
+    font-weight: normal;
+
+    margin-bottom: 50px;
+
+    color: #5d3825;
+}
+
+
+.contenido-carta {
+    font-size:
+        clamp(18px,2vw,22px);
+
+    line-height: 2;
+
+    text-align: justify;
+}
+
+
+.contenido-carta p {
+    margin-bottom: 35px;
+}
+
+
+.separador {
+    text-align: center;
+
+    font-size: 28px;
+
+    margin:
+        25px 0 40px;
+
+    color: #8b503b;
+}
+
+
+.final-carta {
+    text-align: center;
+
+    font-size:
+        clamp(21px,2.5vw,28px);
+
+    font-style: italic;
+
+    margin-top: 55px;
+
+    color: #713e2d;
+}
+
+
+/* =====================================================
+   FOTOS CARTA
+===================================================== */
+
+.fotos-carta {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+
+    margin-bottom: 60px;
+
+    flex-wrap: wrap;
+}
+
+
+.foto {
+    width:
+        min(300px,80%);
+
+    padding: 12px;
+
+    background: #fffaf0;
+
+    box-shadow:
+        0 15px 30px
+        rgba(40,20,10,0.25);
+
+    transition: 0.4s;
+}
+
+
+.foto img {
+    display: block;
+
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+
+.foto:nth-child(1) {
+    transform:
+        rotate(-6deg);
+}
+
+
+.foto:nth-child(2) {
+    transform:
+        rotate(5deg);
+}
+
+
+.foto:hover {
+    transform:
+        rotate(0deg)
+        scale(1.04);
+}
+
+
+/* =====================================================
+   BOTÓN REGRESAR
+===================================================== */
+
+.volver {
+    display: block;
+
+    margin:
+        60px auto 0;
+
+    padding:
+        15px 35px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #6d3b2d;
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.volver:hover {
+    background: #4d271e;
+
+    transform:
+        scale(1.05);
+}
+
+
+/* =====================================================
+   🌎 PLANETA
+===================================================== */
+
+#planeta {
+    display: none;
+
+    min-height: 100vh;
+
+    padding:
+        55px 20px 70px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(255,255,255,0.20),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #e8a0ad,
+            #d77f96,
+            #c96e87
+        );
+
+    color: white;
+}
+
+
+#planeta::before {
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    left: 50%;
+    top: 15%;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        rgba(255,255,255,0.04);
+
+    border-radius: 50%;
+
+    filter: blur(50px);
+
+    pointer-events: none;
+}
+
+
+.contenedor-planeta {
+    width:
+        min(900px,95%);
+
+    margin: auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.titulo-planeta {
+    font-size:
+        clamp(34px,5vw,55px);
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+
+    text-shadow:
+        0 4px 15px
+        rgba(70,20,40,0.30);
+}
+
+
+.subtitulo-planeta {
+    font-size: 18px;
+
+    opacity: 0.85;
+
+    margin-bottom: 35px;
+}
+
+
+.zona-planeta {
+    width:
+        min(440px,85vw);
+
+    height:
+        min(440px,85vw);
+
+    margin:
+        10px auto 20px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    perspective: 1000px;
+
+    touch-action: none;
+}
+
+
+.tierra {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    cursor: grab;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 35% 28%,
+            rgba(255,255,255,0.70),
+            transparent 9%
+        ),
+
+        radial-gradient(
+            circle at 70% 75%,
+            rgba(0,0,0,0.50),
+            transparent 55%
+        ),
+
+        linear-gradient(
+            135deg,
+            #51c8ee,
+            #087ac0 50%,
+            #034875
+        );
+
+    box-shadow:
+
+        inset -35px -25px 60px
+        rgba(0,0,0,0.55),
+
+        inset 20px 15px 35px
+        rgba(255,255,255,0.28),
+
+        0 0 55px
+        rgba(120,220,255,0.50),
+
+        0 25px 60px
+        rgba(60,20,50,0.35);
+
+    transform-style: preserve-3d;
+
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.tierra:active {
+    cursor: grabbing;
+}
+
+
+.tierra::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -5px;
+
+    border-radius: 50%;
+
+    border:
+        5px solid
+        rgba(190,240,255,0.35);
+
+    pointer-events: none;
+
+    z-index: 5;
+
+    box-shadow:
+        0 0 30px
+        rgba(160,235,255,0.40);
+}
+
+
+.tierra::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 50%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.50),
+            transparent 35%,
+            transparent 65%,
+            rgba(255,255,255,0.08)
+        );
+
+    pointer-events: none;
+
+    z-index: 4;
+}
+
+
+.continentes {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 2;
+
+    transition:
+        opacity 0.5s ease;
+}
+
+
+.continentes path {
+    fill: #58a95d;
+
+    stroke:
+        rgba(20,80,35,0.45);
+
+    stroke-width: 1.5;
+
+    filter:
+        drop-shadow(
+            2px 3px 3px
+            rgba(0,0,0,0.25)
+        );
+}
+
+
+.continentes-isi {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 3;
+
+    opacity: 0;
+
+    transform:
+        scale(0.95);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+
+    pointer-events: none;
+}
+
+
+.continentes-isi path {
+    fill: #76c66d;
+
+    stroke: #39733c;
+
+    stroke-width: 2;
+
+    filter:
+        drop-shadow(
+            2px 3px 3px
+            rgba(0,0,0,0.30)
+        );
+}
+
+
+.tierra.modo-isi .continentes {
+    opacity: 0.10;
+}
+
+
+.tierra.modo-isi .continentes-isi {
+    opacity: 1;
+
+    transform:
+        scale(1.03);
+}
+
+
+.indicador-giro {
+    margin-top: -5px;
+
+    margin-bottom: 30px;
+
+    font-size: 15px;
+
+    opacity: 0.78;
+
+    line-height: 1.7;
+}
+
+
+.grados {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    opacity: 1;
+}
+
+
+.mensaje-mundo {
+    width:
+        min(750px,92%);
+
+    margin:
+        20px auto;
+
+    padding:
+        30px 35px;
+
+    background:
+        rgba(90,30,50,0.25);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.25);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 15px 40px
+        rgba(70,20,40,0.18);
+}
+
+
+.mensaje-mundo p {
+    font-size:
+        clamp(19px,2.4vw,26px);
+
+    line-height: 1.7;
+
+    font-style: italic;
+
+    text-shadow:
+        0 2px 8px
+        rgba(60,20,40,0.20);
+}
+
+
+.volver-planeta {
+    position: relative;
+    overflow: hidden;
+
+    display: block;
+
+    margin:
+        35px auto 0;
+
+    padding:
+        15px 38px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #fff0f3;
+
+    color: #8e4057;
+
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 10px 28px rgba(70,20,40,0.18);
+}
+
+
+.volver-planeta:hover {
+    transform:
+        scale(1.07);
+
+    background: white;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,0.20);
+}
+
+
+/* =====================================================
+   ❤️ CORAZONES
+===================================================== */
+
+.corazon {
+    position: fixed;
+
+    font-size: 28px;
+
+    pointer-events: none;
+
+    z-index: 9999;
+
+    animation:
+        subirCorazon
+        1.5s
+        ease-out
+        forwards;
+}
+
+
+@keyframes subirCorazon {
+
+    0% {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(0.6)
+            rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+
+        transform:
+            translateY(-80px)
+            scale(1.1)
+            rotate(-10deg);
+    }
+
+    100% {
+        opacity: 0;
+
+        transform:
+            translateY(-180px)
+            scale(1.4)
+            rotate(15deg);
+    }
+}
+
+
+/* =====================================================
+   🌹 OPCIÓN 3 - MI HURONA
+===================================================== */
+
+#poema-intro {
+    display: none;
+
+    min-height: 100vh;
+
+    padding:
+        60px 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    background:
+
+        linear-gradient(
+            rgba(105,55,40,0.20),
+            rgba(105,55,40,0.20)
+        ),
+
+        url(
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFVE-24RGTWLeOiE_rDxFnOpz87quOLgBQws4zoOr-vQ&s=10"
+        );
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    color: white;
+}
+
+
+.intro-poema-contenedor {
+    width:
+        min(750px,92%);
+
+    margin: auto;
+
+    padding:
+        35px;
+
+    background:
+        rgba(60,25,35,0.48);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.30);
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 25px 70px
+        rgba(40,20,20,0.35);
+}
+
+
+.intro-poema-foto {
+    width:
+        min(500px,100%);
+
+    height:
+        min(500px,65vh);
+
+    margin:
+        0 auto 35px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    border:
+        8px solid
+        rgba(255,248,240,0.90);
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8a0ad,
+            #c96e87
+        );
+
+    box-shadow:
+        0 20px 45px
+        rgba(30,10,20,0.35);
+}
+
+
+.intro-poema-foto img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.intro-poema-titulo {
+    font-size:
+        clamp(35px,6vw,60px);
+
+    font-weight: normal;
+
+    margin-bottom: 30px;
+
+    text-shadow:
+        0 4px 15px
+        rgba(0,0,0,0.35);
+}
+
+
+.boton-seguir {
+    position: relative;
+    overflow: hidden;
+
+    border: none;
+
+    padding:
+        16px 45px;
+
+    border-radius: 50px;
+
+    background:
+        #fff0f3;
+
+    color:
+        #8e4057;
+
+    font-family:
+        Georgia, serif;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 10px 28px
+        rgba(70,20,40,0.18);
+}
+
+
+.boton-seguir:hover {
+    transform:
+        scale(1.08);
+
+    background: white;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,0.25);
+}
+
+
+/* =====================================================
+   POEMA
+===================================================== */
+
+#poema {
+    display: none;
+
+    min-height: 100vh;
+
+    padding:
+        70px 20px;
+
+    position: relative;
+
+    background:
+
+        linear-gradient(
+            rgba(105,55,40,0.20),
+            rgba(105,55,40,0.20)
+        ),
+
+        url(
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFVE-24RGTWLeOiE_rDxFnOpz87quOLgBQws4zoOr-vQ&s=10"
+        );
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    color: #493022;
+}
+
+
+.papel-poema {
+    width:
+        min(1100px,94%);
+
+    margin: auto;
+
+    position: relative;
+
+    padding:
+        80px
+        clamp(25px,7vw,90px);
+
+    background:
+        linear-gradient(
+            rgba(255,248,220,0.96),
+            rgba(235,216,173,0.96)
+        );
+
+    box-shadow:
+        0 25px 70px
+        rgba(40,20,10,0.38);
+
+    border-radius: 4px;
+
+    overflow: hidden;
+}
+
+
+.papel-poema::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: 30px;
+    right: 60px;
+
+    background:
+        rgba(90,50,25,0.07);
+
+    border-radius: 50%;
+
+    filter: blur(25px);
+
+    pointer-events: none;
+}
+
+
+.papel-poema::after {
+    content: "";
+
+    position: absolute;
+
+    width: 160px;
+    height: 220px;
+
+    bottom: 50px;
+    left: 30px;
+
+    background:
+        rgba(70,40,20,0.06);
+
+    border-radius: 50%;
+
+    filter: blur(25px);
+
+    pointer-events: none;
+}
+
+
+.titulo-poema {
+    text-align: center;
+
+    font-size:
+        clamp(35px,5vw,55px);
+
+    font-weight: normal;
+
+    color: #5d3825;
+
+    margin-bottom: 70px;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.subtitulo-poema {
+    text-align: center;
+
+    font-size: 20px;
+
+    font-style: italic;
+
+    color: #8b503b;
+
+    margin-top: -50px;
+
+    margin-bottom: 50px;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.galeria-poema {
+    position: relative;
+
+    min-height: 100px;
+
+    z-index: 3;
+}
+
+
+.foto-poema {
+    width:
+        min(240px,30vw);
+
+    padding: 10px;
+
+    background:
+        #fffaf0;
+
+    box-shadow:
+        0 15px 35px
+        rgba(40,20,10,0.25);
+
+    position: absolute;
+
+    z-index: 5;
+
+    transition:
+        0.4s ease;
+}
+
+
+.foto-poema img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.foto-poema:hover {
+    transform:
+        rotate(0deg)
+        scale(1.08) !important;
+
+    z-index: 20;
+}
+
+
+.foto-poema-1 {
+    top: -30px;
+    right: -25px;
+
+    transform:
+        rotate(7deg);
+}
+
+
+.foto-poema-2 {
+    top: 280px;
+    left: -35px;
+
+    transform:
+        rotate(-7deg);
+}
+
+
+.foto-poema-3 {
+    top: 760px;
+    right: -30px;
+
+    transform:
+        rotate(6deg);
+}
+
+
+.foto-poema-4 {
+    top: 1220px;
+    left: -30px;
+
+    transform:
+        rotate(-6deg);
+}
+
+
+.foto-poema-5 {
+    top: 1770px;
+    right: -25px;
+
+    transform:
+        rotate(7deg);
+}
+
+
+.foto-poema-6 {
+    top: 2250px;
+    left: -25px;
+
+    transform:
+        rotate(-5deg);
+}
+
+
+.texto-poema {
+    width:
+        min(750px,100%);
+
+    margin:
+        auto;
+
+    font-size:
+        clamp(18px,2vw,22px);
+
+    line-height:
+        2;
+
+    text-align:
+        left;
+
+    color:
+        #493022;
+
+    position:
+        relative;
+
+    z-index:
+        4;
+}
+
+
+.texto-poema p {
+    margin-bottom:
+        34px;
+}
+
+
+.poema-destacado {
+    text-align:
+        center;
+
+    font-size:
+        clamp(24px,3vw,32px);
+
+    font-style:
+        italic;
+
+    color:
+        #713e2d;
+
+    margin:
+        55px 0;
+}
+
+
+.separador-poema {
+    text-align:
+        center;
+
+    font-size:
+        30px;
+
+    color:
+        #8b503b;
+
+    margin:
+        50px 0;
+}
+
+
+.foto-poema-enmedio {
+    width:
+        min(450px,80%);
+
+    margin:
+        45px auto;
+
+    padding:
+        12px;
+
+    background:
+        #fffaf0;
+
+    box-shadow:
+        0 15px 35px
+        rgba(40,20,10,0.25);
+
+    transform:
+        rotate(-2deg);
+
+    position:
+        relative;
+
+    z-index:
+        6;
+}
+
+
+.foto-poema-enmedio:nth-of-type(even) {
+    transform:
+        rotate(2deg);
+}
+
+
+.foto-poema-enmedio img {
+    width:
+        100%;
+
+    height:
+        300px;
+
+    object-fit:
+        cover;
+
+    display:
+        block;
+}
+
+
+.final-poema {
+    text-align:
+        center;
+
+    font-size:
+        clamp(22px,3vw,30px);
+
+    font-style:
+        italic;
+
+    line-height:
+        1.7;
+
+    color:
+        #713e2d;
+
+    margin:
+        70px auto 40px;
+
+    max-width:
+        750px;
+}
+
+
+.botones-poema {
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    gap:
+        20px;
+
+    flex-wrap:
+        wrap;
+
+    margin-top:
+        60px;
+
+    position:
+        relative;
+
+    z-index:
+        10;
+}
+
+
+.boton-poema {
+    position: relative;
+    overflow: hidden;
+
+    border:
+        none;
+
+    padding:
+        15px 35px;
+
+    border-radius:
+        30px;
+
+    background:
+        #6d3b2d;
+
+    color:
+        white;
+
+    font-family:
+        Georgia, serif;
+
+    font-size:
+        17px;
+
+    cursor:
+        pointer;
+
+    transition:
+        0.3s;
+
+    box-shadow:
+        0 10px 25px
+        rgba(50,20,10,0.15);
+}
+
+
+.boton-poema:hover {
+    transform:
+        translateY(-3px)
+        scale(1.05);
+
+    background:
+        #4d271e;
+
+    box-shadow:
+        0 10px 25px
+        rgba(50,20,10,0.25);
+}
+
+
+.boton-misterio {
+    background:
+        #8e4057;
+}
+
+
+.boton-misterio:hover {
+    background:
+        #6e2d42;
+}
+
+
+/* =====================================================
+   CUPÓN
+===================================================== */
+
+#cupon {
+    display:
+        none;
+
+    min-height:
+        100vh;
+
+    padding:
+        70px 20px;
+
+    position:
+        relative;
+
+    background:
+
+        linear-gradient(
+            rgba(105,55,40,0.20),
+            rgba(105,55,40,0.20)
+        ),
+
+        url(
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFVE-24RGTWLeOiE_rDxFnOpz87quOLgBQws4zoOr-vQ&s=10"
+        );
+
+    background-size:
+        cover;
+
+    background-position:
+        center;
+
+    background-attachment:
+        fixed;
+
+    text-align:
+        center;
+
+    color:
+        white;
+}
+
+
+.cupon-contenedor {
+    width:
+        min(1000px,94%);
+
+    margin:
+        auto;
+
+    padding:
+        45px 30px;
+
+    background:
+        rgba(70,25,40,0.42);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.25);
+
+    border-radius:
+        30px;
+
+    backdrop-filter:
+        blur(8px);
+
+    box-shadow:
+        0 25px 70px
+        rgba(40,20,20,0.35);
+}
+
+
+.cupon-titulo {
+    font-size:
+        clamp(32px,5vw,55px);
+
+    font-weight:
+        normal;
+
+    margin-bottom:
+        35px;
+
+    text-shadow:
+        0 4px 15px
+        rgba(0,0,0,0.3);
+}
+
+
+.cupon-foto {
+    width:
+        min(850px,100%);
+
+    height:
+        min(500px,65vh);
+
+    margin:
+        auto;
+
+    background:
+        rgba(255,248,240,0.95);
+
+    border:
+        10px solid
+        rgba(255,255,255,0.85);
+
+    border-radius:
+        15px;
+
+    overflow:
+        hidden;
+
+    box-shadow:
+        0 20px 50px
+        rgba(20,10,15,0.4);
+}
+
+
+.cupon-foto img {
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        contain;
+
+    display:
+        block;
+}
+
+
+.cupon-instruccion {
+    margin-top:
+        25px;
+
+    font-size:
+        17px;
+
+    opacity:
+        0.85;
+}
+
+
+.volver-cupon {
+    position: relative;
+    overflow: hidden;
+
+    margin-top:
+        35px;
+
+    border:
+        none;
+
+    padding:
+        15px 38px;
+
+    border-radius:
+        30px;
+
+    background:
+        #fff0f3;
+
+    color:
+        #8e4057;
+
+    font-family:
+        Georgia, serif;
+
+    font-size:
+        17px;
+
+    cursor:
+        pointer;
+
+    transition:
+        0.3s;
+
+    box-shadow:
+        0 10px 28px
+        rgba(70,20,40,0.18);
+}
+
+
+.volver-cupon:hover {
+    transform:
+        scale(1.07);
+
+    background:
+        white;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,0.25);
+}
+
+
+/* =====================================================
+   BRILLO DE BOTONES
+===================================================== */
+
+#entrar::before,
+.boton-seguir::before,
+.volver-planeta::before,
+.volver-cupon::before,
+.boton-poema::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            100deg,
+            transparent,
+            rgba(255,255,255,0.55),
+            transparent
+        );
+
+    transform:
+        skewX(-20deg);
+
+    transition:
+        left 0.6s ease;
+}
+
+#entrar:hover::before,
+.boton-seguir:hover::before,
+.volver-planeta:hover::before,
+.volver-cupon:hover::before,
+.boton-poema:hover::before {
+
+    left: 150%;
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width:700px) {
+
+    .mensaje-portada {
+        padding:
+            45px 25px;
+    }
+
+    .menu {
+        grid-template-columns:
+            1fr;
+
+        gap:
+            20px;
+    }
+
+    .opcion {
+        min-height:
+            180px;
+    }
+
+    #inicio {
+        padding:
+            50px 15px;
+    }
+
+    #inicio::before,
+    #inicio::after {
+        opacity:
+            0.5;
+
+        font-size:
+            120px;
+    }
+
+    #carta {
+        padding:
+            35px 10px;
+    }
+
+    .papel {
+        padding:
+            50px 25px;
+    }
+
+    .contenido-carta {
+        text-align:
+            left;
+
+        line-height:
+            1.8;
+    }
+
+    .foto img {
+        height:
+            250px;
+    }
+
+
+    /* PLANETA */
+
+    #planeta {
+        padding:
+            40px 12px 55px;
+    }
+
+    .zona-planeta {
+        width:
+            min(350px,88vw);
+
+        height:
+            min(350px,88vw);
+    }
+
+    .mensaje-mundo {
+        padding:
+            25px 20px;
+    }
+
+    .mensaje-mundo p {
+        font-size:
+            19px;
+
+        line-height:
+            1.6;
+    }
+
+
+    /* INTRO POEMA */
+
+    #poema-intro {
+        padding:
+            40px 12px;
+    }
+
+    .intro-poema-contenedor {
+        padding:
+            20px;
+    }
+
+    .intro-poema-foto {
+        height:
+            420px;
+    }
+
+
+    /* POEMA */
+
+    #poema {
+        padding:
+            35px 8px;
+    }
+
+    .papel-poema {
+        width:
+            96%;
+
+        padding:
+            55px 22px;
+    }
+
+    .titulo-poema {
+        margin-bottom:
+            60px;
+    }
+
+    .subtitulo-poema {
+        margin-top:
+            -35px;
+    }
+
+    .texto-poema {
+        font-size:
+            18px;
+
+        line-height:
+            1.85;
+
+        text-align:
+            left;
+    }
+
+    .foto-poema {
+        width:
+            135px;
+
+        padding:
+            7px;
+    }
+
+    .foto-poema img {
+        height:
+            135px;
+    }
+
+    .foto-poema-1 {
+        right:
+            -10px;
+
+        top:
+            -30px;
+    }
+
+    .foto-poema-2 {
+        left:
+            -10px;
+
+        top:
+            300px;
+    }
+
+    .foto-poema-3 {
+        right:
+            -10px;
+
+        top:
+            850px;
+    }
+
+    .foto-poema-4 {
+        left:
+            -10px;
+
+        top:
+            1350px;
+    }
+
+    .foto-poema-5 {
+        right:
+            -10px;
+
+        top:
+            1900px;
+    }
+
+    .foto-poema-6 {
+        left:
+            -10px;
+
+        top:
+            2400px;
+    }
+
+    .foto-poema-enmedio {
+        width:
+            90%;
+    }
+
+    .foto-poema-enmedio img {
+        height:
+            250px;
+    }
+
+    .botones-poema {
+        flex-direction:
+            column;
+    }
+
+    .boton-poema {
+        width:
+            min(280px,90%);
+    }
+
+
+    /* CUPÓN */
+
+    #cupon {
+        padding:
+            40px 10px;
+    }
+
+    .cupon-contenedor {
+        padding:
+            30px 15px;
+    }
+
+    .cupon-foto {
+        height:
+            400px;
+    }
+
+    .youtube-hint {
+        bottom:
+            18px;
+    }
+}
+
+
+/* =====================================================
+   CELULAR MUY PEQUEÑO
+===================================================== */
+
+@media (max-width:400px) {
+
+    .zona-planeta {
+        width:
+            290px;
+
+        height:
+            290px;
+    }
+
+    .titulo-planeta {
+        font-size:
+            32px;
+    }
+
+    .subtitulo-planeta {
+        font-size:
+            16px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     PORTADA
+===================================================== -->
+
+<section id="portada">
+
+    <div class="mensaje-portada">
+
+        <h1>
+            Te amo mucho
+        </h1>
+
+        <p>
+            Tengo algunas cosas que quiero mostrarte...
+        </p>
+
+        <button
+            id="entrar"
+            onclick="entrarPagina()"
+        >
+            Entrar ❤️
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGINA PRINCIPAL
+===================================================== -->
+
+<section id="inicio">
+
+    <div class="titulo-inicio">
+
+        <h2>
+            Para la niña que amo ❤️
+        </h2>
+
+        <p>
+            Hay algunas cosas que quiero recordarte...
+        </p>
+
+    </div>
+
+
+    <div class="menu">
+
+
+        <!-- OPCIÓN 1 -->
+
+        <div
+            class="opcion"
+            onclick="abrirCarta()"
+        >
+
+            <span>
+                Resumen de estos 22 meses
+            </span>
+
+        </div>
+
+
+        <!-- OPCIÓN 2 -->
+
+        <div
+            class="opcion"
+            onclick="abrirPlaneta()"
+        >
+
+            <span>
+                Eres mi mundo
+            </span>
+
+        </div>
+
+
+        <!-- OPCIÓN 3 -->
+
+        <div
+            class="opcion"
+            onclick="abrirIntroPoema()"
+        >
+
+            <span>
+                Cuando tengo un poema
+            </span>
+
+        </div>
+
+
+        <!-- OPCIÓN 4 - YOUTUBE -->
+
+        <div
+            class="opcion opcion-youtube"
+            onclick="abrirYoutube()"
+        >
+
+            <span>
+                Te amo mucho más de lo que tú crees
+            </span>
+
+            <small class="youtube-hint">
+                ▶ Hay algo esperándote...
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OPCIÓN 1 - CARTA
+===================================================== -->
+
+<section id="carta">
+
+    <div class="papel">
+
+        <h2 class="titulo-carta">
+            Para mi niña preciosa
+        </h2>
+
+
+        <div class="fotos-carta">
+
+            <div class="foto">
+
+                <img
+                    src="IMG_20260323_213838_562.jpg"
+                    alt="Nuestra foto"
+                >
+
+            </div>
+
+
+            <div class="foto">
+
+                <img
+                    src="20250717_230630.jpg"
+                    alt="Nuestra foto"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="contenido-carta">
+
+            <p>
+                Ya son 22 meses mi niña preciosa,
+                te amo tanto, eres mi mundo entero,
+                veo contigo el futuro y por poco quiero
+                vivir la eternidad contigo.
+            </p>
+
+            <p>
+                Pocas veces pienso en algo sin ti y por eso
+                te quiero cuidar y querer tanto como yo pueda.
+                Te amo tanto que buscaría mil veces todo por ti
+                y estaría cada 1 a tu lado con rosas y girasoles.
+            </p>
+
+            <p>
+                Estando contigo estaré bien y sé que serás todo
+                lo que yo buscaré hasta mi futuro.
+            </p>
+
+            <div class="separador">
+                ✦ ❦ ✦
+            </div>
+
+            <p class="final-carta">
+                Sigue buscando, mi amor...
+                que te quedan aún más sorpresas ❤️
+            </p>
+
+        </div>
+
+
+        <button
+            class="volver"
+            onclick="volverInicio()"
+        >
+            ← Regresar
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OPCIÓN 2 - PLANETA
+===================================================== -->
+
+<section id="planeta">
+
+    <div class="contenedor-planeta">
+
+        <h2 class="titulo-planeta">
+            Eres mi mundo 🌎❤️
+        </h2>
+
+        <p class="subtitulo-planeta">
+            Gira el mundo y descubre lo que quiero decirte...
+        </p>
+
+
+        <div class="zona-planeta">
+
+            <div
+                class="tierra"
+                id="tierra"
+            >
+
+                <!-- CONTINENTES -->
+
+                <svg
+                    class="continentes"
+                    viewBox="0 0 500 500"
+                    preserveAspectRatio="none"
+                >
+
+                    <path d="
+                        M80 115
+                        C100 80 150 70 185 95
+                        C205 110 195 135 175 145
+                        C155 150 145 170 125 165
+                        C105 155 85 145 80 115
+                        Z
+                    "/>
+
+                    <path d="
+                        M185 205
+                        C205 195 225 210 230 235
+                        C235 260 220 280 220 305
+                        C215 335 200 365 180 390
+                        C165 370 160 340 168 315
+                        C175 290 170 260 175 235
+                        C177 220 178 210 185 205
+                        Z
+                    "/>
+
+                    <path d="
+                        M255 105
+                        C275 90 305 90 325 105
+                        C335 115 330 130 315 135
+                        C300 140 290 130 275 135
+                        C260 135 250 120 255 105
+                        Z
+                    "/>
+
+                    <path d="
+                        M270 150
+                        C300 140 330 155 340 180
+                        C350 210 335 245 315 275
+                        C300 295 285 290 275 270
+                        C260 240 255 210 260 185
+                        C262 170 260 160 270 150
+                        Z
+                    "/>
+
+                    <path d="
+                        M320 115
+                        C350 95 400 100 430 125
+                        C450 145 445 170 420 180
+                        C395 190 380 175 360 180
+                        C340 175 325 160 315 145
+                        Z
+                    "/>
+
+                    <path d="
+                        M375 290
+                        C400 275 435 285 445 310
+                        C450 330 435 350 410 355
+                        C385 355 370 335 375 290
+                        Z
+                    "/>
+
+                    <path d="
+                        M170 45
+                        C195 30 225 35 235 55
+                        C240 75 220 90 195 90
+                        C175 85 165 65 170 45
+                        Z
+                    "/>
+
+                </svg>
+
+
+                <!-- ISI -->
+
+                <svg
+                    class="continentes-isi"
+                    viewBox="0 0 500 500"
+                    preserveAspectRatio="none"
+                >
+
+                    <path d="
+                        M95 150
+                        C105 140 125 140 135 150
+                        L135 350
+                        C125 360 105 360 95 350
+                        Z
+                    "/>
+
+                    <path d="
+                        M180 150
+                        C200 135 245 140 260 155
+                        C270 165 265 180 250 185
+                        C230 175 210 175 205 185
+                        C200 195 220 200 240 210
+                        C270 225 275 250 260 275
+                        C245 300 205 315 180 295
+                        C170 287 170 270 185 260
+                        C205 275 230 275 238 260
+                        C244 248 225 243 205 235
+                        C175 225 165 200 175 180
+                        C178 170 182 160 180 150
+                        Z
+                    "/>
+
+                    <path d="
+                        M315 150
+                        C325 140 345 140 355 150
+                        L355 350
+                        C345 360 325 360 315 350
+                        Z
+                    "/>
+
+                </svg>
+
+            </div>
+
+        </div>
+
+
+        <div class="indicador-giro">
+
+            Gira el planeta hasta llegar a 180° ❤️
+
+            <br>
+
+            <span class="grados">
+                <span id="grados">0</span>°
+            </span>
+
+        </div>
+
+
+        <div class="mensaje-mundo">
+
+            <p>
+                porque eres mi mundo y te amo tanto,
+                quisiera seguir contigo unos 50 millones
+                de años contigo
+            </p>
+
+        </div>
+
+
+        <button
+            class="volver-planeta"
+            onclick="volverDelPlaneta()"
+        >
+            ← Regresar
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OPCIÓN 3 - INTRODUCCIÓN
+===================================================== -->
+
+<section id="poema-intro">
+
+    <div class="intro-poema-contenedor">
+
+        <div class="intro-poema-foto">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0187NvX9BhcKK4QxRqIZ1rA9sgcskqAuH7Fmc_dXv3fdFD29ljSU2QQCm&s=10"
+                alt="Te amo mi hurona"
+            >
+
+        </div>
+
+
+        <h2 class="intro-poema-titulo">
+            Te amo mi hurona ❤️
+        </h2>
+
+
+        <button
+            class="boton-seguir"
+            onclick="abrirPoema()"
+        >
+            Seguir ❤️
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OPCIÓN 3 - POEMA
+===================================================== -->
+
+<section id="poema">
+
+    <div class="papel-poema">
+
+        <h2 class="titulo-poema">
+            Aun cuando siento que te he perdido
+        </h2>
+
+        <p class="subtitulo-poema">
+            Para mi princesa.
+        </p>
+
+
+        <div class="galeria-poema">
+
+            <div class="foto-poema foto-poema-1">
+                <img
+                    src="imagen60.jpg"
+                    alt="Nuestra foto"
+                >
+            </div>
+
+            <div class="foto-poema foto-poema-2">
+                <img
+                    src="imagen10.jpg"
+                    alt="Nuestra foto"
+                >
+            </div>
+
+            <div class="foto-poema foto-poema-3">
+                <img
+                    src="imagen30.jpg"
+                    alt="Nuestra foto"
+                >
+            </div>
+
+            <div class="foto-poema foto-poema-4">
+                <img
+                    src="imagen50.jpg"
+                    alt="Nuestra foto"
+                >
+            </div>
+
+            <div class="foto-poema foto-poema-5">
+                <img
+                    src="imagen60.jpg"
+                    alt="Nuestra foto"
+                >
+            </div>
+
+            <div class="foto-poema foto-poema-6">
+                <img
+                    src="imagen40.jpg"
+                    alt="Nuestra foto"
+                >
+            </div>
+
+        </div>
+
+
+        <div class="texto-poema">
+
+
+            <p>
+                Aun cuando siento que te he perdido
+                A veces me pregunto si amar de verdad alcanza.
+            </p>
+
+
+            <p>
+                Si todas las horas que uno entrega,
+                todos los días,
+                todas esas pequeñas cosas que hace sin que nadie las vea,
+                sirven para demostrar que, entre tantas posibilidades,
+                uno decidió quedarse.
+            </p>
+
+
+            <p class="poema-destacado">
+                Yo te elegí.
+            </p>
+
+
+            <p>
+                Incluso en esos días en los que todo parecía decirme que me fuera.
+                En los días en que era más fácil hacerse el indiferente,
+                cerrar la puerta
+                y fingir que nada importaba.
+            </p>
+
+
+            <p>
+                Y no me arrepiento.
+            </p>
+
+
+            <p>
+                Si algún día tuviera que darte lo más valioso que tengo,
+                creo que no te daría mis palabras.
+                Las palabras se las lleva el tiempo demasiado fácil.
+            </p>
+
+
+            <p>
+                Tampoco mis manos,
+                ni las cosas que algún día pueda conseguir.
+            </p>
+
+
+            <p class="poema-destacado">
+                Te daría mi tiempo.
+            </p>
+
+
+            <p>
+                Porque eso sí que no vuelve.
+                Una hora que pasó no regresa.
+                Un día perdido tampoco.
+                Y los años...
+                bueno, los años terminan convirtiéndose en recuerdos antes de que uno alcance a darse cuenta.
+            </p>
+
+
+            <p>
+                Y aun así,
+                si pudiera volver atrás,
+                creo que volvería a gastar todos esos segundos en ti.
+            </p>
+
+
+            <div class="foto-poema-enmedio">
+                <img
+                    src="imagen20.jpg"
+                    alt="Nuestra foto"
+                >
+            </div>
+
+
+            <p>
+                Quizá por eso me duele tanto sentir que no soy suficiente.
+            </p>
+
+
+            <p>
+                Porque yo no solamente te amo.
+            </p>
+
+
+            <p class="poema-destacado">
+                También me gustas.
+                Muchísimo.
+            </p>
+
+
+            <p>
+                Me atraes de una forma que no sé explicar solamente hablando de tu cuerpo.
+                Me atrae tu forma de ser,
+                la manera en que miras,
+                la forma en que haces ciertas cosas sin siquiera darte cuenta,
+                esas pequeñas partes de ti que probablemente ni siquiera consideras importantes
+                y que para mí terminan significándolo todo.
+            </p>
+
+
+            <p>
+                A veces simplemente te miro
+                y pienso:
+                “qué mierda hago yo con tanta suerte”.
+            </p>
+
+
+            <p>
+                Y después vienen las noches.
+            </p>
+
+
+            <p>
+                Esas noches en las que me entra la duda
+                de si todavía estás conmigo
+                o si solamente soy yo quien sigue intentando sostener algo que ya se me está escapando de las manos.
+            </p>
+
+
+            <p>
+                Porque hay momentos en los que siento que ya te perdí.
+            </p>
+
+
+            <p>
+                Y lo peor es que no siento que haya dejado de amarte.
+            </p>
+
+
+            <p>
+                Al contrario.
+            </p>
+
+
+            <p>
+                Quizá ese sea precisamente el problema.
+            </p>
+
+
+            <p>
+                Que te sigo queriendo con la misma fuerza,
+                pero a veces siento que eso no basta cuando existen personas alrededor
+                que miran lo nuestro desde afuera
+                y creen saber qué es lo que sentimos.
+            </p>
+
+
+            <p>
+                Y sí,
+                voy a decir algo que quizá no debería.
+            </p>
+
+
+            <p>
+                Hay una parte de mí que guarda resentimiento.
+            </p>
+
+
+            <p>
+                No odio.
+                No quiero enemigos.
+                No quiero convertir a nadie en el villano de nuestra historia.
+            </p>
+
+
+            <p>
+                Pero sí me duele.
+            </p>
+
+
+            <p>
+                Me duele que algo que para mí ha sido tan real
+                pueda ser visto como una costumbre,
+                como comodidad,
+                como miedo a estar solos.
+            </p>
+
+
+            <p class="poema-destacado">
+                ¿Comodidad?
+            </p>
+
+
+            <p>
+                Si fuera por comodidad,
+                probablemente ya me habría ido.
+            </p>
+
+
+            <p>
+                Porque estar contigo nunca ha significado simplemente estar cómodo.
+            </p>
+
+
+            <p>
+                Significa elegirte.
+            </p>
+
+
+            <p>
+                Incluso cuando duele.
+                Incluso cuando tengo miedo.
+                Incluso cuando siento que estoy perdiendo.
+            </p>
+
+
+            <p class="poema-destacado">
+                Yo no me quedo porque sea fácil.
+                <br>
+                Me quedo porque eres tú.
+            </p>
+
+
+            <p>
+                Porque hay algo en ti que no sé explicar,
+                algo que hace que incluso cuando estoy lejos
+                siga sintiendo que una parte de mí está contigo.
+            </p>
+
+
+            <p>
+                Y quizá eso es lo que más me cuesta explicar.
+            </p>
+
+
+            <p>
+                Que aunque no pueda abrazarte cuando quiero,
+                aunque no pueda estar a tu lado todos los días,
+                aunque algunas veces mi ausencia parezca mucho más grande que mi presencia,
+            </p>
+
+
+            <p>
+                sigues apareciendo en mi vida.
+            </p>
+
+
+            <p>
+                En lo que pienso.
+                En las decisiones que tomo.
+                En las cosas que imagino para mañana.
+            </p>
+
+
+            <div class="foto-poema-enmedio">
+                <img
+                    src="imagen80.jpg"
+                    alt="Nuestra foto"
+                >
+            </div>
+
+
+            <p>
+                A veces hasta en cosas tontas.
+            </p>
+
+
+            <p>
+                Una canción.
+                Un lugar.
+                Una frase cualquiera.
+            </p>
+
+
+            <p>
+                Y de repente estás tú otra vez.
+            </p>
+
+
+            <p>
+                Quizá amar sea eso.
+            </p>
+
+
+            <p class="poema-destacado">
+                Llevar a alguien contigo incluso cuando no lo tienes al lado.
+            </p>
+
+
+            <p>
+                Y si algún día te pierdo de verdad,
+                si algún día la vida termina separándonos
+                y todo esto queda atrás como esas cosas que uno recuerda con un poco de tristeza,
+            </p>
+
+
+            <p>
+                quiero quedarme al menos con una certeza.
+            </p>
+
+
+            <p>
+                Que yo sí te amé.
+            </p>
+
+
+            <p class="poema-destacado">
+                De verdad.
+            </p>
+
+
+            <p>
+                Te amé cuando tenía miedo.
+                Te amé cuando dudaba de mí.
+                Te amé cuando sentía que no podía darte todo lo que merecías.
+                Te amé incluso cuando pensé que quizá ya te había perdido.
+            </p>
+
+
+            <p>
+                Y si me preguntas cuánto estaría dispuesto a dar por ti,
+                probablemente la respuesta sería demasiado.
+            </p>
+
+
+            <p>
+                Porque incluso te daría algo que nadie debería regalar tan fácilmente:
+            </p>
+
+
+            <p class="poema-destacado">
+                mi tiempo.
+            </p>
+
+
+            <p>
+                Los años que todavía no he vivido.
+                Las horas que todavía no conozco.
+                Todo ese pedazo de vida que todavía está esperando convertirse en recuerdos.
+            </p>
+
+
+            <p>
+                No porque quiera desaparecer por ti,
+                ni porque crea que el amor tenga que destruirnos.
+            </p>
+
+
+            <p>
+                Sino porque, entre todas las cosas que podría haber encontrado en esta vida,
+                encontrarte a ti fue una de las pocas que realmente me hizo querer quedarme.
+            </p>
+
+
+            <p>
+                Tú nunca fuiste simplemente alguien para llenar un silencio.
+            </p>
+
+
+            <p>
+                Ni una persona para tener cuando me sentía solo.
+            </p>
+
+
+            <p>
+                Fuiste mi elección.
+            </p>
+
+
+            <p>
+                Y también fuiste mi contradicción.
+            </p>
+
+
+            <p>
+                Mi tranquilidad y mi preocupación.
+                Mi felicidad y, algunas veces, mi miedo.
+                La persona que puede hacerme sentir capaz de todo
+                y al mismo tiempo hacerme sentir como el hombre más inseguro del mundo.
+            </p>
+
+
+            <p>
+                Y quizás eso también es amar.
+            </p>
+
+
+            <p>
+                Aceptar que alguien puede tener tanto poder sobre tu corazón
+                sin siquiera pedírtelo.
+            </p>
+
+
+            <p>
+                No sé qué va a pasar con nosotros.
+            </p>
+
+
+            <p>
+                No sé si todo esto va a terminar bien.
+                No sé si algún día vamos a mirar atrás y reírnos de todas las veces que pensamos que nos estábamos perdiendo.
+            </p>
+
+
+            <p>
+                O si, por el contrario,
+                algún día tendremos que aceptar que nuestros caminos simplemente tomaron direcciones diferentes.
+            </p>
+
+
+            <p>
+                No quiero pensar en eso.
+            </p>
+
+
+            <p>
+                Todavía no.
+            </p>
+
+
+            <p>
+                Porque mientras pueda seguir diciéndote que te amo,
+                lo voy a hacer.
+            </p>
+
+
+            <p>
+                Mientras mi corazón todavía pronuncie tu nombre
+                sin sentirse extraño al hacerlo,
+                voy a seguir eligiéndote.
+            </p>
+
+
+            <p class="poema-destacado">
+                Te amo.
+                <br>
+                Y sí,
+                eres mi todo.
+            </p>
+
+
+            <p>
+                No de esa manera perfecta que se escribe en las películas.
+            </p>
+
+
+            <p>
+                Lo eres de una manera mucho más humana.
+            </p>
+
+
+            <p>
+                Con miedo.
+                Con dudas.
+                Con errores.
+                Con días buenos y días horribles.
+            </p>
+
+
+            <p>
+                Pero te amo.
+            </p>
+
+
+            <p>
+                Y si alguna vez todo esto termina,
+                si alguna vez realmente te pierdo,
+                quiero que recuerdes algo.
+            </p>
+
+
+            <p>
+                No fuiste una etapa.
+            </p>
+
+
+            <p>
+                No fuiste una costumbre.
+            </p>
+
+
+            <p>
+                No fuiste simplemente alguien que pasó por mi vida.
+            </p>
+
+
+            <p class="poema-destacado">
+                Fuiste la persona a la que,
+                aun teniendo miedo de perder,
+                seguí escogiendo.
+            </p>
+
+
+            <p>
+                Mi princesa.
+            </p>
+
+
+            <p>
+                Y quizá ahora entiendo un poco mejor por qué existen personas que llegan a nuestra vida
+                y desde el principio se sienten extrañamente familiares.
+            </p>
+
+
+            <p>
+                Dostoyevski escribió alguna vez sobre esos encuentros que, desde la primera mirada,
+                parecen despertar algo en nosotros antes incluso de haber pronunciado una palabra.
+            </p>
+
+
+            <p>
+                Y quizá contigo fue así.
+            </p>
+
+
+            <p>
+                Porque antes de saber cuánto iba a quererte,
+                antes de saber cuánto podía doler perderte,
+                antes de entender todo lo que ibas a terminar significando para mí,
+            </p>
+
+
+            <p class="poema-destacado">
+                hubo algo en ti que reconocí.
+            </p>
+
+
+            <p>
+                No sé qué fue.
+            </p>
+
+
+            <p>
+                Nunca he sabido explicarlo.
+            </p>
+
+
+            <p>
+                Solo sé que cuando te encontré,
+                una parte de mí,
+                sin preguntarme nada,
+            </p>
+
+
+            <p class="poema-destacado">
+                ya te había elegido.
+            </p>
+
+
+            <div class="separador-poema">
+                ✦ ❦ ✦
+            </div>
+
+
+            <p class="final-poema">
+                Para mi princesa,
+                mi hurona,
+                mi contradicción,
+                mi mundo.
+                ❤️
+            </p>
+
+        </div>
+
+
+        <div class="botones-poema">
+
+            <button
+                class="boton-poema"
+                onclick="volverDesdePoema()"
+            >
+                ← Regresar
+            </button>
+
+
+            <button
+                class="boton-poema boton-misterio"
+                onclick="abrirCupon()"
+            >
+                ???
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CUPÓN
+===================================================== -->
+
+<section id="cupon">
+
+    <div class="cupon-contenedor">
+
+        <h2 class="cupon-titulo">
+            Para ti ❤️
+        </h2>
+
+
+        <div class="cupon-foto">
+
+            <img
+                src="1791082198522.jpg"
+                alt="Nuestro cupón"
+            >
+
+        </div>
+
+
+        <p class="cupon-instruccion">
+            Eres mi vida,y espero que ocupes este ocupon
+        </p>
+
+
+        <button
+            class="volver-cupon"
+            onclick="volverInicioDesdeCupon()"
+        >
+            ← Volver al inicio
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MUSICA
+===================================================== -->
+
+<audio
+    id="musica"
+    loop
+>
+
+    <source
+        src="Musica.mp3"
+        type="audio/mpeg"
+    >
+
+</audio>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   ▶ YOUTUBE
+   CAMBIA SOLO ESTA URL
+===================================================== */
+
+const enlaceYoutube =
+    "https://www.youtube.com/watch?v=OtaXxkMVaVU";
+
+
+function abrirYoutube() {
+
+    if (
+        enlaceYoutube ===
+        "PEGA_AQUI_TU_LINK_DE_YOUTUBE"
+    ) {
+
+        alert(
+            "Primero tienes que poner el enlace de YouTube ❤️"
+        );
+
+        return;
+    }
+
+    window.open(
+        enlaceYoutube,
+        "_blank",
+        "noopener,noreferrer"
+    );
+}
+
+
+/* =====================================================
+   ENTRAR
+===================================================== */
+
+function entrarPagina() {
+
+    const musica =
+        document.getElementById("musica");
+
+
+    musica.play().catch(
+        function(error) {
+
+            console.log(
+                "El navegador bloqueó la reproducción:",
+                error
+            );
+
+        }
+    );
+
+
+    document.getElementById("portada")
+        .style.display = "none";
+
+
+    document.getElementById("inicio")
+        .style.display = "block";
+
+
+    window.scrollTo(0,0);
+}
+
+
+/* =====================================================
+   OPCIÓN 1
+===================================================== */
+
+function abrirCarta() {
+
+    ocultarTodasLasPaginas();
+
+
+    document.getElementById("carta")
+        .style.display = "block";
+
+
+    window.scrollTo(0,0);
+}
+
+
+function volverInicio() {
+
+    ocultarTodasLasPaginas();
+
+
+    document.getElementById("inicio")
+        .style.display = "block";
+
+
+    window.scrollTo(0,0);
+}
+
+
+/* =====================================================
+   OPCIÓN 2 - PLANETA
+===================================================== */
+
+function abrirPlaneta() {
+
+    ocultarTodasLasPaginas();
+
+
+    document.getElementById("planeta")
+        .style.display = "block";
+
+
+    anguloPlaneta = 0;
+
+
+    actualizarPlaneta();
+
+
+    window.scrollTo(0,0);
+}
+
+
+function volverDelPlaneta() {
+
+    ocultarTodasLasPaginas();
+
+
+    document.getElementById("inicio")
+        .style.display = "block";
+
+
+    window.scrollTo(0,0);
+}
+
+
+/* =====================================================
+   OPCIÓN 3 - INTRO
+===================================================== */
+
+function abrirIntroPoema() {
+
+    ocultarTodasLasPaginas();
+
+
+    document.getElementById("poema-intro")
+        .style.display = "flex";
+
+
+    window.scrollTo(0,0);
+}
+
+
+/* =====================================================
+   OPCIÓN 3 - POEMA
+===================================================== */
+
+function abrirPoema() {
+
+    ocultarTodasLasPaginas();
+
+
+    document.getElementById("poema")
+        .style.display = "block";
+
+
+    window.scrollTo(0,0);
+}
+
+
+/* =====================================================
+   POEMA → INICIO
+===================================================== */
+
+function volverDesdePoema() {
+
+    ocultarTodasLasPaginas();
+
+
+    document.getElementById("inicio")
+        .style.display = "block";
+
+
+    window.scrollTo(0,0);
+}
+
+
+/* =====================================================
+   BOTÓN ???
+===================================================== */
+
+function abrirCupon() {
+
+    ocultarTodasLasPaginas();
+
+
+    document.getElementById("cupon")
+        .style.display = "block";
+
+
+    window.scrollTo(0,0);
+}
+
+
+/* =====================================================
+   CUPÓN → INICIO
+===================================================== */
+
+function volverInicioDesdeCupon() {
+
+    ocultarTodasLasPaginas();
+
+
+    document.getElementById("inicio")
+        .style.display = "block";
+
+
+    window.scrollTo(0,0);
+}
+
+
+/* =====================================================
+   OCULTAR TODAS LAS PÁGINAS
+===================================================== */
+
+function ocultarTodasLasPaginas() {
+
+    document.getElementById("portada")
+        .style.display = "none";
+
+
+    document.getElementById("inicio")
+        .style.display = "none";
+
+
+    document.getElementById("carta")
+        .style.display = "none";
+
+
+    document.getElementById("planeta")
+        .style.display = "none";
+
+
+    document.getElementById("poema-intro")
+        .style.display = "none";
+
+
+    document.getElementById("poema")
+        .style.display = "none";
+
+
+    document.getElementById("cupon")
+        .style.display = "none";
+}
+
+
+/* =====================================================
+   🌎 VARIABLES DEL PLANETA
+===================================================== */
+
+let anguloPlaneta = 0;
+
+let arrastrandoPlaneta = false;
+
+let posicionAnteriorX = 0;
+
+
+const tierra =
+    document.getElementById("tierra");
+
+
+const gradosTexto =
+    document.getElementById("grados");
+
+
+/* =====================================================
+   GIRAR PLANETA
+===================================================== */
+
+tierra.addEventListener(
+    "pointerdown",
+    function(event) {
+
+        arrastrandoPlaneta = true;
+
+        posicionAnteriorX =
+            event.clientX;
+
+
+        tierra.setPointerCapture(
+            event.pointerId
+        );
+
+
+        crearCorazones(
+            event.clientX,
+            event.clientY
+        );
+
+    }
+);
+
+
+tierra.addEventListener(
+    "pointermove",
+    function(event) {
+
+        if (!arrastrandoPlaneta)
+            return;
+
+
+        const diferencia =
+            event.clientX -
+            posicionAnteriorX;
+
+
+        posicionAnteriorX =
+            event.clientX;
+
+
+        anguloPlaneta +=
+            diferencia * 0.8;
+
+
+        actualizarPlaneta();
+
+    }
+);
+
+
+tierra.addEventListener(
+    "pointerup",
+    function() {
+
+        arrastrandoPlaneta = false;
+
+    }
+);
+
+
+tierra.addEventListener(
+    "pointercancel",
+    function() {
+
+        arrastrandoPlaneta = false;
+
+    }
+);
+
+
+/* =====================================================
+   ACTUALIZAR PLANETA
+===================================================== */
+
+function actualizarPlaneta() {
+
+    let angulo =
+        ((anguloPlaneta % 360) + 360)
+        % 360;
+
+
+    gradosTexto.textContent =
+        Math.round(angulo);
+
+
+    tierra.style.transform =
+        `rotateY(${anguloPlaneta}deg)`;
+
+
+    const distancia =
+        Math.abs(angulo - 180);
+
+
+    if (distancia < 18) {
+
+        tierra.classList.add(
+            "modo-isi"
+        );
+
+    } else {
+
+        tierra.classList.remove(
+            "modo-isi"
+        );
+
+    }
+}
+
+
+/* =====================================================
+   ❤️ CORAZONES
+===================================================== */
+
+function crearCorazones(x,y) {
+
+    const corazones = [
+
+        "❤️",
+        "💕",
+        "💗",
+        "💖",
+        "💓",
+        "💞"
+
+    ];
+
+
+    for (
+        let i = 0;
+        i < 8;
+        i++
+    ) {
+
+        const corazon =
+            document.createElement("div");
+
+
+        corazon.className =
+            "corazon";
+
+
+        corazon.textContent =
+            corazones[
+                Math.floor(
+                    Math.random()
+                    * corazones.length
+                )
+            ];
+
+
+        corazon.style.left =
+            (
+                x +
+                Math.random() * 100 -
+                50
+            ) + "px";
+
+
+        corazon.style.top =
+            (
+                y +
+                Math.random() * 50 -
+                25
+            ) + "px";
+
+
+        corazon.style.fontSize =
+            (
+                22 +
+                Math.random() * 18
+            ) + "px";
+
+
+        corazon.style.animationDuration =
+            (
+                1.2 +
+                Math.random() * 0.8
+            ) + "s";
+
+
+        document.body.appendChild(
+            corazon
+        );
+
+
+        setTimeout(
+            function() {
+
+                corazon.remove();
+
+            },
+            2200
+        );
+
+    }
+}
+
+
+</script>
+
+</body>
+</html>
